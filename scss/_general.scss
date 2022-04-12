@@ -4,11 +4,12 @@ html{
 *, 
 *::after,
 *::before{
+    padding: 0;
+    margin: 0;  
     box-sizing: inherit;
 }
 body{
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Fraunces', 'Barlow', sans-serif;
 }
 
 .visually-hidden{
@@ -23,7 +24,18 @@ body{
 }
 
 .container{
-    max-width: 1280px;
+    max-width: 1320px;
     padding: 0 30px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.main-part {
+    background-color: #FEFCF7;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 0 24px;
+        margin: 0 auto;
+    }
 }

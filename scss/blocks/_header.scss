@@ -1,0 +1,105 @@
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FEFCF7;
+    z-index: 1;
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    .logo-link {
+        text-decoration: none;
+        object-fit: fill;
+        .logo-img {
+            display: block;
+        }
+    }
+    .nav-list {
+        display: flex;
+        list-style: none;
+        .list-item {
+            margin-right: 23px;
+            .list-link {
+                padding: 20px;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0.923077px;
+                text-transform: uppercase;
+                color: #83888F;
+                cursor: pointer;
+            }
+            .list-link:active {
+                color: #333D4B;
+            }
+        }
+    }
+    &-toggle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header {
+        padding: 32px 24px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        .logo-link {
+            text-decoration: none;
+            object-fit: fill;
+            .logo-img {
+                display: block;
+            }
+        }
+        .nav-list {
+            display: none;
+            // display: flex;
+            // flex-direction: column;
+        }
+        &-toggle {
+            width: 20px;
+            height: 20px;
+            display: block;
+            float: right;
+            position: relative;
+            .toggle-icon {
+                top: 10px;
+            }
+            .toggle-icon::before {
+                content: "";
+                top: -6px;
+            }
+            .toggle-icon::after {
+                content: "";
+                top: 6px;;
+            }
+            .toggle-icon::before, 
+            .toggle-icon::after,
+            .toggle-icon {
+                content: "";
+                width: 16px;
+                height: 3px;
+                display: block;
+                background: #333D4B;
+                position: absolute;
+                right: 0px;
+                border-radius: 3px;
+            }
+        }
+        &-toggle:active .nav-list .toggle-icon {
+            display: block;
+            transform: translateX(-50%);
+            background: transparent;
+        }
+        &-toggle:active .toggle-icon::after {
+            transform: rotate(45deg) translate(35px, -35px);
+        }
+        &-toggle:active .toggle-icon::before{
+            transform: rotate(-45deg) translate(35px, 35px);
+        }
+   }
+}
