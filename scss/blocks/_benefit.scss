@@ -153,11 +153,11 @@
         }
         &-cards {
             height: 635px;
-            transform: translateY(-560px);
             .benefit-card {
                 width: 279px;
                 margin: 0;
                 margin-bottom: 24px;
+                transform: translateY(-560px);
             }
             .benefit-card:last-child {
                 margin-bottom: 0;
