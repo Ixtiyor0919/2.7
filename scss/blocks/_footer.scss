@@ -50,10 +50,9 @@
                 & svg {
                     width: 24px;
                     height: 24px;
-                    margin-right: 20px;
                 }
-                & svg:last-child(3) {
-                    margin-right: 0;
+                .facebook, .twitter {
+                    margin-right: 20px;
                 }
                 & svg:hover { 
                 background-color: #FDD6BA;
