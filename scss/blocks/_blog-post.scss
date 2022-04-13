@@ -135,10 +135,12 @@
         background-position: 0 100px;
         padding-top: 120px;
         padding-bottom: 68px;
-        padding-left: 47px;
+        padding-left: 46px;
         padding-right: 46px;
         flex-direction: column;
         background-color: #FEFCF7;
+        text-align: center;
+        justify-content: center;
         &-card {
             margin: 0;
         }
