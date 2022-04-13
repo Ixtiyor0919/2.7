@@ -23,9 +23,6 @@
         background-position: top;
         background-size: contain; 
     }
-    & > div:nth-child(3n) {
-        margin-right: 30px;
-    }
     .espresso::before {
         content: "";
         width: 255px;
@@ -142,6 +139,9 @@
         padding-right: 46px;
         flex-direction: column;
         background-color: #FEFCF7;
+        &-card {
+            margin: 0;
+        }
         &-card-title {
             margin-bottom: 16px;
         }
