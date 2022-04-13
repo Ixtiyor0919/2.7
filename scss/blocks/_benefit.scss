@@ -39,7 +39,6 @@
             display: inline-block;
             background: #0E8784;
             border-radius: 8px;
-            text-align: center;
             .benefit-card-title {
                 font-weight: 900;
                 font-size: 24px;
@@ -153,7 +152,7 @@
             }
         }
         &-cards {
-            position: relative;
+            height: 635px;
             transform: translateY(-560px);
             .benefit-card {
                 width: 279px;
