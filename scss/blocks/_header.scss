@@ -37,12 +37,15 @@
             }
         }
     }
+    .check-input {
+        display: none;
+    }
     &-toggle {
         display: none;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
     .header {
         padding: 32px 24px;
         justify-content: space-between;
@@ -57,8 +60,23 @@
         }
         .nav-list {
             display: none;
-            // display: flex;
-            // flex-direction: column;
+            flex-direction: column;
+        }
+        .check-input {
+            width: 20px;
+            height: 20px;
+            display: block;
+            opacity: 0;
+        }
+        .check-input:checked + .toggle-icon::before {
+            margin-top: 5px;
+            transform: rotate(100deg);
+        }
+        .check-input:checked + .toggle-icon {
+            transform: rotate(130deg);
+        }
+        .check-input:checked + .toggle-icon::after {
+            opacity: 0;
         }
         &-toggle {
             width: 20px;
@@ -89,17 +107,7 @@
                 right: 0px;
                 border-radius: 3px;
             }
-        }
-        &-toggle:active .nav-list .toggle-icon {
-            display: block;
-            transform: translateX(-50%);
-            background: transparent;
-        }
-        &-toggle:active .toggle-icon::after {
-            transform: rotate(45deg) translate(35px, -35px);
-        }
-        &-toggle:active .toggle-icon::before{
-            transform: rotate(-45deg) translate(35px, 35px);
+            
         }
    }
 }
