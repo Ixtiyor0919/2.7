@@ -4,7 +4,7 @@
     border-radius: 10px;
     background: url(../../images/hero-1x.png) no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (   min--moz-device-pixel-ratio: 2),
@@ -15,7 +15,7 @@
         &{
             background: url(../../images/hero-2x.png) no-repeat;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
         }
     } 
     &-title {
@@ -35,7 +35,6 @@
         font-size: 16px;
         line-height: 26px;
         color: #FEFCF7;
-        mix-blend-mode: normal;
         opacity: 0.8;
     }
     &-link {
@@ -62,33 +61,14 @@
 
 @media screen and (max-width:  768px) {
     .hero {
-        width: 327px;
-        height: 500px;
         padding-top: 100px;
         padding-bottom: 100px;
         padding-left: 24px;
         padding-right: 24px;
         text-align: center;
-        border-radius: 10px;
-        background: url(../../images/hero.png) no-repeat;
-        background-position: center;
-        background-size: contain;
-        @media
-        only screen and (-webkit-min-device-pixel-ratio: 2),
-        only screen and (   min--moz-device-pixel-ratio: 2),
-        only screen and (     -o-min-device-pixel-ratio: 2/1),
-        only screen and (        min-device-pixel-ratio: 2),
-        only screen and (                min-resolution: 192dpi),
-        only screen and (                min-resolution: 2dppx) { 
-            &{
-                background: url(../../images/hero.png) no-repeat;
-                background-position: center;
-                background-size: contain;
-            }
-        } 
         &-title {
             width: 279px;
-            font-size: 40px;
+            font-size: 38px;
             line-height: 40px;
             margin: 0;
         }
@@ -99,6 +79,8 @@
             margin: 0;
             margin-top: 24px;
             margin-bottom: 39px;
+            margin-right: auto;
+            margin-left: auto;
         }
         &-link {
             margin: 0;
