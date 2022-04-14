@@ -160,6 +160,7 @@
 
 @media screen and (max-width:  767px)  {
     .working {
+        margin: 0 24px;
         &-line, &-line-second {
             display: none;
         }

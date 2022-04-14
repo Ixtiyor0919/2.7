@@ -15,17 +15,21 @@
         justify-content: space-around;
         .states-card {
             .title {
-                margin-bottom: 24px;
+                margin-bottom: 16px;
                 font-weight: 900;
                 font-size: 32px;
                 line-height: 36px;
                 color: #333D4B;
             }
             .address {
+                margin-top: 8px;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 26px;
                 color: #333D4B;
+            }
+            .address:first-child {
+                margin-top: 0;
             }
         }
         .kingdom::before {
@@ -93,6 +97,28 @@
             background-position: top;
             background-size: contain; 
         }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .states {
+        padding-top: 60px;
+        padding-bottom: 120px;
+        margin: 0 24px;
+        text-align: center;
+        &-cards {
+            flex-direction: column;
+            .states-card {
+                margin-bottom: 80px;
+                .title {
+                    margin-bottom: 14px;
+                    font-size: 28px;
+                }
+            }
+            .states-card:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

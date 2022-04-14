@@ -61,10 +61,8 @@
 
 @media screen and (max-width:  767px) {
     .hero {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 100px 24px;
+        margin: 0 24px;
         text-align: center;
         &-title {
             width: 100%;
