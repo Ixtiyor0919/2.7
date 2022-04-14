@@ -1,19 +1,18 @@
-<<<<<<< HEAD
 html{
     box-sizing: border-box;
 }
 *, 
 *::after,
-*::before{
+*::before {
     padding: 0;
     margin: 0;  
     box-sizing: inherit;
 }
-body{
+body {
     font-family: 'Fraunces', 'Barlow', sans-serif;
 }
 
-.visually-hidden{
+.visually-hidden {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
@@ -24,7 +23,7 @@ body{
     position: absolute;
 }
 
-.container{
+.container {
     max-width: 1320px;
     padding: 0 30px;
     margin: 0 auto;
@@ -39,89 +38,4 @@ body{
         padding: 0 24px;
         margin: 0 auto;
     }
-=======
-<<<<<<< HEAD
-html{
-    box-sizing: border-box;
-}
-*, 
-*::after,
-*::before{
-    padding: 0;
-    margin: 0;  
-    box-sizing: inherit;
-}
-body{
-    font-family: 'Fraunces', 'Barlow', sans-serif;
-}
-
-.visually-hidden{
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-}
-
-.container{
-    max-width: 1320px;
-    padding: 0 30px;
-    margin: 0 auto;
-}
-
-.main-part {
-    background-color: #FEFCF7;
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 0 24px;
-        margin: 0 auto;
-    }
-=======
-html{
-    box-sizing: border-box;
-}
-*, 
-*::after,
-*::before{
-    padding: 0;
-    margin: 0;  
-    box-sizing: inherit;
-}
-body{
-    font-family: 'Fraunces', 'Barlow', sans-serif;
-}
-
-.visually-hidden{
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-}
-
-.container{
-    max-width: 1320px;
-    padding: 0 30px;
-    margin: 0 auto;
-}
-
-.main-part {
-    background-color: #FEFCF7;
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 0 24px;
-        margin: 0 auto;
-    }
->>>>>>> 9cf82cde6c4d61206b63c24a5e1c7efbf5e88efe
->>>>>>> 702f2b9e8cda883a4ab6ca5b4aed7cce2bed2f7f
 }

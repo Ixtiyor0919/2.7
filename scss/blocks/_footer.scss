@@ -1,70 +1,64 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 9cf82cde6c4d61206b63c24a5e1c7efbf5e88efe
 .footer {
     background: #2C343E;
-    &-pavigation {
-        padding: 48px 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-between;
-        .footer-left-part {
+        &-pavigation {
+            padding: 48px 0;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            text-align: center;
-            .footer-logo-link {
-                margin-right: 130px;
-                text-decoration: none;
-            }
-            .footer-list {
-                list-style: none;
+            -ms-flex-pack: distribute;
+            justify-content: space-between;
+            .footer-left-part {
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
-                align-items: center;
-                .footer-list-item {
-                    margin-right: 33px;
-                    .footer-list-link {
-                        text-decoration: none;
-                        font-weight: 700;
-                        font-size: 12px;
-                        line-height: 15px;
-                        letter-spacing: 0.923077px;
-                        text-transform: uppercase;
-                        color: #83888F;
-                    }
-                    .footer-list-link:active {
-                        color: #FEFCF7;
+                text-align: center;
+                .footer-logo-link {
+                    margin-right: 130px;
+                    text-decoration: none;
+                }
+                .footer-list {
+                    list-style: none;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    align-items: center;
+                    .footer-list-item {
+                        margin-right: 33px;
+                        .footer-list-link {
+                            text-decoration: none;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 15px;
+                            letter-spacing: 0.923077px;
+                            text-transform: uppercase;
+                            color: #83888F;
+                        }
+                        .footer-list-link:active {
+                            color: #FEFCF7;
+                        }
                     }
                 }
             }
-        }
-        .socials {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            &-icon-link {
-                & svg {
-                    width: 24px;
-                    height: 24px;
-                }
-                .facebook, .twitter {
-                    margin-right: 20px;
-                }
-<<<<<<< HEAD
-                & svg:hover { 
-=======
-                & svg:active { 
->>>>>>> 9cf82cde6c4d61206b63c24a5e1c7efbf5e88efe
-                background-color: #FDD6BA;
-                 border-radius: 5px;
+            .socials {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                &-icon-link {
+                    & svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    .facebook, .twitter {
+                        margin-right: 20px;
+                    }
+                    & svg:hover { 
+                    & svg:active { 
+                    background-color: #FDD6BA;
+                    border-radius: 5px;
+                    }
                 }
             }
         }
@@ -100,103 +94,4 @@
             }
         }
     }
-<<<<<<< HEAD
-=======
-=======
-.footer {
-    background: #2C343E;
-    &-pavigation {
-        padding: 48px 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-between;
-        .footer-left-part {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            text-align: center;
-            .footer-logo-link {
-                margin-right: 130px;
-                text-decoration: none;
-            }
-            .footer-list {
-                list-style: none;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                align-items: center;
-                .footer-list-item {
-                    margin-right: 33px;
-                    .footer-list-link {
-                        text-decoration: none;
-                        font-weight: 700;
-                        font-size: 12px;
-                        line-height: 15px;
-                        letter-spacing: 0.923077px;
-                        text-transform: uppercase;
-                        color: #83888F;
-                    }
-                    .footer-list-link:active {
-                        color: #FEFCF7;
-                    }
-                }
-            }
-        }
-        .socials {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            &-icon-link {
-                & svg {
-                    width: 24px;
-                    height: 24px;
-                }
-                .facebook, .twitter {
-                    margin-right: 20px;
-                }
-                & svg:hover { 
-                background-color: #FDD6BA;
-                 border-radius: 5px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .footer {
-        &-pavigation {
-            padding: 54px;
-            flex-direction: column;
-            .footer-left-part {
-                display: block;
-                .footer-logo-link {
-                    text-align: center;
-                    margin-right: 0;
-                    .footer-logo {
-                        margin-bottom: 49px;
-                    }
-                }
-                .footer-list {
-                    flex-direction: column;
-                    .footer-list-item {
-                        margin: 0;
-                        margin-bottom: 24px;
-                    }
-                }
-            }
-            .socials {
-                margin-top: 26px;
-                text-align: center;
-                justify-content: center;
-            }
-        }
-    }
->>>>>>> 702f2b9e8cda883a4ab6ca5b4aed7cce2bed2f7f
->>>>>>> 9cf82cde6c4d61206b63c24a5e1c7efbf5e88efe
 }
