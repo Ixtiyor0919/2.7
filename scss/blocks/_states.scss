@@ -1,0 +1,98 @@
+.states {
+    padding-top: 68px;
+    padding-bottom: 168px;
+    text-align: left;
+    &-text {
+        margin-left: 9%;
+        margin-bottom: 72px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+    }
+    &-cards {
+        display: flex;
+        justify-content: space-around;
+        .states-card {
+            .title {
+                margin-bottom: 24px;
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 36px;
+                color: #333D4B;
+            }
+            .address {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #333D4B;
+            }
+        }
+        .kingdom::before {
+            content: "";
+            width: 41px;
+            height: 49px;
+            margin-bottom: 48px;
+            display: inline-block;
+            background: url(../../images/states-kingdom-1x.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+            @media
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (   min--moz-device-pixel-ratio: 2),
+            only screen and (     -o-min-device-pixel-ratio: 2/1),
+            only screen and (        min-device-pixel-ratio: 2),
+            only screen and (                min-resolution: 192dpi),
+            only screen and (                min-resolution: 2dppx) {
+            background-image: url(../../images/states-kingdom-2x.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain; 
+        }
+        }
+        .canada::before {
+            content: "";
+            width: 52px;
+            height: 50px;
+            margin-bottom: 48px;
+            display: inline-block;
+            background: url(../../images/states-canada-1x.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+            @media
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (   min--moz-device-pixel-ratio: 2),
+            only screen and (     -o-min-device-pixel-ratio: 2/1),
+            only screen and (        min-device-pixel-ratio: 2),
+            only screen and (                min-resolution: 192dpi),
+            only screen and (                min-resolution: 2dppx) {
+            background-image: url(../../images/states-canada-2x.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain; 
+        }
+        }
+        .aus::before {
+            content: "";
+            width: 49px;
+            height: 44px;
+            margin-bottom: 48px;
+            display: inline-block;
+            background: url(../../images/states-aus-1x.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+            @media
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (   min--moz-device-pixel-ratio: 2),
+            only screen and (     -o-min-device-pixel-ratio: 2/1),
+            only screen and (        min-device-pixel-ratio: 2),
+            only screen and (                min-resolution: 192dpi),
+            only screen and (                min-resolution: 2dppx) {
+            background-image: url(../../images/states-aus-2x.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain; 
+        }
+        }
+    }
+}

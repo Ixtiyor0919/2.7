@@ -1,0 +1,182 @@
+.form-wrapper {
+    padding-bottom: 168px;
+    padding-top: 88px;
+    display: flex;
+    justify-content: space-around;
+    .inner-subtitle-list {
+        list-style: none;
+        .text-item {
+            align-items: center;
+            .number {
+                margin-right: 24px;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 32px;
+                color: #83888F;
+                display: inline-block;
+            }
+            .title {
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 32px;
+                color: #83888F;
+                display: inline-block;
+            }
+            .number:hover {
+                color: #0E8784;
+            }
+            .number:active {
+                color: #333D4B;
+            }
+            .title:hover {
+                color: #FDD6BA;
+            }
+            .title:active {
+                color: #333D4B;
+            }
+            .line {
+                width: 255px;
+                height: 1px;
+                margin: 24px 0;
+                background: #83888F;
+                opacity: 0.25;
+            }
+        }
+    }
+    .form-column-container {
+        .services-container {
+            width: 800px;
+            position: relative;
+            margin-left: auto;
+            .checkbox-title {
+                margin-bottom: 56px;
+                display: flex;
+                align-items: center;
+                font-weight: 900;
+                font-size: 40px;
+                line-height: 48px;
+                color: #83888F;
+            }
+            .checkbox-title::after{
+                content: "";
+                width: 18px;
+                height: 12px;
+                display: inline-block;
+                margin-left: auto;
+                background-image: url(../../images/services-1x.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                @media
+                only screen and (-webkit-min-device-pixel-ratio: 2),
+                only screen and (   min--moz-device-pixel-ratio: 2),
+                only screen and (     -o-min-device-pixel-ratio: 2/1),
+                only screen and (        min-device-pixel-ratio: 2),
+                only screen and (                min-resolution: 192dpi),
+                only screen and (                min-resolution: 2dppx) { 
+                    .checkbox-title {
+                        background: url(../../images/services-2x.png) no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                    }
+                } 
+            }
+            .checkbox-input {
+                width: 246px;
+                height: 250px;
+                border-radius: 8px;
+                position: absolute;
+                opacity: 0;
+            }
+            .checkbox-input:checked + .checkbox-check {
+                background: #0E8784;
+            }
+            .checkbox-input:hover + .checkbox-check {
+                background: #FDD6BA;
+            }
+            .checkbox-input:checked + .checkbox-check .title {
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 32px;
+                color: #FFFFFF;
+            }  
+            .checkbox-input:checked + .checkbox-check .text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FEFCF7;
+            }
+            .checkbox-check {
+                display: inline-block;
+                padding: 32px 28px 84px 28px;
+                border-radius: 8px;
+                background: #F4F1EB;
+                align-items: center;
+                .title {
+                    margin-bottom: 24px;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #333D4B;
+                }
+                .text {
+                    width: 190px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #333D4B;
+                }
+            }
+            .small-check {
+                margin-right: 23px;
+            }
+        }
+        .services-bottom-wrapper {
+            width: 800px;
+            padding: 27px 64px;
+            margin-top: 88px;
+            margin-bottom: 40px;
+            margin-left: auto;
+            background: #2C343E;
+            .title {
+                margin-bottom: 8px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                opacity: 0.5;
+            }
+            .text {
+                display: flex;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 40px;
+                color: #FFFFFF;
+            }  
+            .success{
+                color: #0E8784;
+            }          
+        } 
+        .form-btn {
+            padding: 16px 35px;
+            display: block;
+            margin-left: auto;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 25px;
+            border: none;
+            outline: none;
+            text-align: center;
+            color: #FEFCF7;
+            background: #0E8784;
+            border-radius: 6px;
+        }   
+        .form-btn:hover  {
+            background: #66D2CF;
+        }
+        .form-btn:active  {
+            background: #E2DEDB;
+        }   
+    }
+}

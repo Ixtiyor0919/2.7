@@ -1,0 +1,28 @@
+.commitments {
+    padding-top: 100px;
+    padding-bottom: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-worker {
+        border-radius: 10px;
+    }
+    &-text {
+        .commitments-title {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 48px;
+            color: #333D4B;
+        }
+        .commitments-description {
+            width: 540px;
+            margin-top: 32px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #333D4B;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}

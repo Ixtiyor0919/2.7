@@ -1,0 +1,132 @@
+.plan_working {
+    padding-left: 85px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 71px;
+    background: #2C343E;
+    border-radius: 10px;    
+    &-line {
+        width: 380px;
+        height: 1px;
+        border: none;
+        background: #FDD6BA;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+    }
+    &-line::before {
+        content: "";
+        width: 31px;
+        height: 31px;
+        display: inline-block;
+        background-image: url(../../images/plan-working-1x.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) { 
+            & {
+                background: url(../../images/plan-working-2x.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        } 
+    }
+    &-line-second {
+        width: 380px;
+        height: 1px;
+        margin-left: 380px;
+        border: none;
+        background: #FDD6BA;
+        display: flex;
+        align-items: center;
+    }
+    &-line-second::before {
+        content: "";
+        width: 31px;
+        height: 31px;
+        display: inline-block;
+        background-image: url(../../images/plan-working-1x.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) { 
+            & {
+                background: url(../../images/plan-working-2x.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        } 
+    }
+    &-line-second::after {
+        content: "";
+        width: 31px;
+        height: 31px;
+        display: inline-block;
+        margin-left: 350px;
+        background-image: url(../../images/plan-working-1x.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) { 
+            & {
+                background: url(../../images/plan-working-2x.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        } 
+    }  
+    &-wrapper {
+        margin-top: 67px;
+        display: flex;
+        .plan_working-card {
+            margin-right: 95px;
+            .plan_working-card-text {
+                font-weight: 900;
+                font-size: 72px;
+                line-height: 72px;
+                color: #FDD6BA;
+            }  
+            .plan_working-card-title {
+                width: 255px;
+                margin: 42px 0 32px 0;
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 36px;
+                color: #FEFCF7;
+            }
+            .plan_working-card-description {
+                width: 285px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FEFCF7;
+            }
+        }
+        .plan_working-card:last-child {
+            margin-right: 0;
+        }
+    }        
+}

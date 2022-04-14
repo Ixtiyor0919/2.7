@@ -1,0 +1,43 @@
+.about {
+    height: 450px;
+    padding-top: 137px;
+    padding-bottom: 137px;
+    margin-bottom: 68px;
+    border-radius: 10px;
+    align-items: center;
+    align-items: center;
+    background: url(../../images/about-1x.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        & {
+            background: url(../../images/about-2x.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    } 
+    &-title {
+        margin-left: 85px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FEFCF7;
+        align-items: center;
+    }
+    &-description {
+        margin-top: 24px;
+        margin-left: 85px;
+        width: 445px;
+        font-weight: 400;
+        font-size: 16px;
+            line-height: 26px;
+            color: #FEFCF7;
+            align-items: center;
+    }
+}

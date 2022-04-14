@@ -1,0 +1,43 @@
+.plan {
+    width: 1280px;
+    padding-top: 134px;
+    padding-bottom: 134px;
+    padding-left: 85px;
+    margin-bottom: 64px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(../../images/plan-1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        & {
+            background: url(../../images/plan-2x.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+    &-title {
+        margin-bottom: 32px;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: #FEFCF7;
+    }
+    &-description {
+        width: 445px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+        opacity: 0.8;
+    }
+}
