@@ -10,6 +10,7 @@ html{
 }
 body {
     font-family: 'Fraunces', 'Barlow', sans-serif;
+    background-color: #FEFCF7;
 }
 
 .visually-hidden {
@@ -29,13 +30,8 @@ body {
     margin: 0 auto;
 }
 
-.main-part {
-    background-color: #FEFCF7;
-}
-
-@media screen and (max-width: 455px) {
+@media screen and (min-width: 767px) {
     .container {
-        max-width: 455px;
         padding: 0 24px;
         margin: 0 auto;
     }

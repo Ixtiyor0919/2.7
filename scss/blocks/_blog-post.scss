@@ -129,9 +129,8 @@
     }    
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .blog-post {
-        width: 327px;
         background-position: 0 100px;
         padding-top: 120px;
         padding-bottom: 68px;
@@ -148,6 +147,7 @@
             margin-bottom: 16px;
         }
         &-card-description {
+            width: 100%;
             margin-bottom: 48px;
         }
         .espresso {
