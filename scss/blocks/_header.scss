@@ -11,6 +11,7 @@
     .logo-link {
         text-decoration: none;
         object-fit: fill;
+        margin-right: auto;
         .logo-img {
             display: block;
         }
@@ -36,11 +37,13 @@
             }
         }
     }
-    .check-input {
-        display: none;
-    }
-    &-toggle {
-        display: none;
+    .input-checkbox {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        z-index: 1;
     }
 }
 
@@ -63,19 +66,17 @@
             }
         }
         .nav-list {
-            transition: opacity .4s ease-in-out, visibility;
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            flex-direction: column;
+            position: fixed;
+            transform: translateY(-100%);
             width: 100%;
             height: 500px;
             padding-top: 10%;
-            position: absolute;
-            top: 100%;
+            top: 0;
+            left: 0;
             align-items: center;
             text-align: center;
             flex-direction: column;
+            transition: all .5s ease-in-out;
             background: linear-gradient(0, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
             .list-item {
                 margin-bottom: 32px;
@@ -93,51 +94,32 @@
                 }
             }
         }
-        .check-input {
-            width: 20px;
-            height: 20px;
+        & .toggle-icon .toggle-line {
+            width: 16px;
+            height: 3px;
+            margin: 3px;
+            border-radius: 3px;
+            background: #333D4B;
         }
-        .check-input:checked + .toggle-icon::before {
+        & .toggle-icon {
             margin-top: 5px;
-            transform: rotate(100deg);
         }
-        .check-input:checked + .toggle-icon {
-            transform: rotate(130deg);
+        .input-checkbox {
+            right: 5%;
+            cursor: pointer;
         }
-        .check-input:checked + .toggle-icon::after {
+        & :checked ~ .nav-list {
+            top: 10%;
+            transform: translateY(0);
+        }
+        & .input-checkbox:checked ~ .toggle-icon .toggle-line:nth-child(1) {
+            transform: translateY(6px) rotate(50deg);
+        }
+        & .input-checkbox:checked ~ .toggle-icon .toggle-line:nth-child(3) {
+            transform: translateY(-6px) rotate(130deg);
+        }
+        & .input-checkbox:checked ~ .toggle-icon .toggle-line:nth-child(2) {
             opacity: 0;
-        }
-        &-toggle:hover .nav-list {
-            opacity: 1;
-            visibility: visible;
-        }
-        &-toggle {
-            width: 20px;
-            height: 20px;
-            display: block;
-            float: right;
-            position: relative;
-            .toggle-icon {
-                top: 10px;
-            }
-            .toggle-icon::before {
-                top: -6px;
-            }
-            .toggle-icon::after {
-                top: 6px;;
-            }
-            .toggle-icon::before, 
-            .toggle-icon::after,
-            .toggle-icon {
-                content: "";
-                width: 16px;
-                height: 3px;
-                display: block;
-                background: #333D4B;
-                position: absolute;
-                right: 0px;
-                border-radius: 3px;
-            } 
         }
     }
 }
