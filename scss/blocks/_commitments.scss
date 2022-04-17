@@ -30,7 +30,9 @@
     .commitments {
         padding-top: 120px;
         padding-bottom: 120px;
+        margin-bottom: 82px;
         flex-direction: column;
+        overflow: hidden;
         &-text {
             margin-top: 48px;
             text-align: center;
