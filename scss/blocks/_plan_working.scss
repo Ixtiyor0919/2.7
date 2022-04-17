@@ -1,4 +1,5 @@
 .plan_working {
+    width: 1280px;
     padding-left: 85px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -103,13 +104,13 @@
         display: flex;
         .plan_working-card {
             margin-right: 95px;
-            .plan_working-card-text {
+            &-text {
                 font-weight: 900;
                 font-size: 72px;
                 line-height: 72px;
                 color: #FDD6BA;
             }  
-            .plan_working-card-title {
+            &-title {
                 width: 255px;
                 margin: 42px 0 32px 0;
                 font-weight: 900;
@@ -117,7 +118,7 @@
                 line-height: 36px;
                 color: #FEFCF7;
             }
-            .plan_working-card-description {
+            &-description {
                 width: 285px;
                 font-weight: 400;
                 font-size: 16px;
@@ -129,4 +130,39 @@
             margin-right: 0;
         }
     }        
+}
+
+@media screen and (max-width: 768px) {
+    .plan_working {
+        width: unset;
+        padding: 0 24px;
+        margin: 0;
+        border-radius: unset;
+        &-line, &-line-second {
+            display: none;
+        }
+        &-wrapper {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            text-align: center;
+            display: block;
+            .plan_working-card {
+                margin: 0;
+                margin-top: 56px;
+                &-title {
+                    width: 100%;
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+                &-description {
+                    width: 100%;
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+            .plan_working-card:first-child {
+                margin-top: 0;
+            }
+        }
+    }
 }

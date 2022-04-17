@@ -129,14 +129,13 @@
     }    
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .blog-post {
         background-position: 0 100px;
         padding-top: 120px;
-        padding-bottom: 68px;
-        padding-left: 46px;
-        padding-right: 46px;
-        margin: 0 24px;
+        padding-bottom: 60px;
+        padding-left: 24px;
+        padding-right: 24px;
         flex-direction: column;
         background-color: #FEFCF7;
         text-align: center;

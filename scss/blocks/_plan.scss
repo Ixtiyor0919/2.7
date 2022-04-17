@@ -10,7 +10,7 @@
     background-image: url(../../images/plan-1x.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border-radius: 10px;
     @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -22,7 +22,7 @@
         & {
             background: url(../../images/plan-2x.png) no-repeat;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
         }
     }
     &-title {
@@ -40,4 +40,27 @@
         color: #FEFCF7;
         opacity: 0.8;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .plan {
+        width: unset;
+        padding: 101px 24px 136px 24px;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        border-radius: unset;
+        &-title {
+            width: 100%;
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 22px;
+        }
+        &-description {
+            width: 100%;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+        
 }

@@ -101,11 +101,10 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .states {
-        padding-top: 60px;
+        padding-top: 120px;
         padding-bottom: 120px;
-        margin: 0 24px;
         text-align: center;
         &-cards {
             flex-direction: column;
