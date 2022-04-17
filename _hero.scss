@@ -1,0 +1,87 @@
+.hero {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    background: url(../../images/hero-1x.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        &{
+            background: url(../../images/hero-2x.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    } 
+    &-title {
+        width: 540px;
+        margin-top: 87px;
+        margin-left: 80px;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: #FEFCF7;
+        display: inline-block;
+    }
+    &-description {
+        width: 445px;
+        margin: 32px 0 56px 80px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+        opacity: 0.8;
+    }
+    &-link {
+        padding: 16px 31px;
+        margin-bottom: 116px;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #FEFCF7;
+        text-decoration: none;
+        background: #0E8784;
+        border-radius: 6px;
+        display: inline-block;
+        margin-left: 85px;
+    }
+    &-link:hover  {
+        background: #66D2CF;
+    }
+    &-link:active  {
+        background: #E2DEDB;
+    }  
+}
+
+@media screen and (max-width:  768px) {
+    .hero {
+        padding: 100px 24px;
+        text-align: center;
+        border-radius: unset;
+        &-title {
+            width: 100%;
+            font-size: 38px;
+            line-height: 40px;
+            margin: 0;
+        }
+        &-description {
+            width: 100%;
+            font-size: 15px;
+            line-height: 25px;
+            margin: 0;
+            margin-top: 24px;
+            margin-bottom: 39px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        &-link {
+            margin: 0;
+        }
+    }
+}

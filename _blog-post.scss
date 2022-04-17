@@ -1,0 +1,157 @@
+.blog-post {
+    padding-top: 136px;
+    padding-bottom: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #FEFCF7;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-image: url(../../images/blog-post-1x.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+        background-image: url(../../images/blog-post-2x.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain; 
+    }
+    .espresso::before {
+        content: "";
+        width: 255px;
+        height: 193px;
+        display: inline-block;
+        background-image: url(../../images/blog-post-espresso-1x.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) {
+            background-image: url(../../images/blog-post-espresso-2x.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain; 
+        }
+    }
+    .planalto::before {
+        content: "";
+        width: 255px;
+        height: 193px;
+        display: inline-block;
+        background-image: url(../../images/blog-post-planalto-1x.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) {
+            background-image: url(../../images/blog-post-planalto-2x.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain; 
+        }
+    }  
+    .picollo::before {
+        content: "";
+        width: 255px;
+        height: 193px;
+        display: inline-block;
+        background-image: url(../../images/blog-post-picollo-1x.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) {
+            background-image: url(../../images/blog-post-picollo-2x.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain; 
+        }
+    }
+    .danche::before {
+        content: "";
+        width: 255px;
+        height: 193px;
+        display: inline-block;
+        background-image: url(../../images/blog-post-danche-1x.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) {
+            background-image: url(../../images/blog-post-danche-2x.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: contain; 
+        }
+    }
+    &-card-title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #333D4B;
+    }
+    &-card-description {
+        width: 255px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #333D4B;
+        opacity: 0.6;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .blog-post {
+        background-position: 0 100px;
+        padding-top: 120px;
+        padding-bottom: 60px;
+        padding-left: 24px;
+        padding-right: 24px;
+        flex-direction: column;
+        background-color: #FEFCF7;
+        text-align: center;
+        justify-content: center;
+        &-card {
+            margin: 0;
+        }
+        &-card-title {
+            margin-bottom: 16px;
+        }
+        &-card-description {
+            width: 100%;
+            margin-bottom: 48px;
+        }
+        .espresso {
+            margin-top: 74px;
+        }
+    }
+}
